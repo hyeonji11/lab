@@ -1,0 +1,10 @@
+feign:
+  svc1:
+    name: svc1
+    url: https://apis.data.go.kr
+    code: B551011
+    service: KorService1
+
+spring:
+  config:
+    import: my-info.yml

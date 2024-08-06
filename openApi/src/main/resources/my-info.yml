@@ -1,0 +1,3 @@
+openapi:
+  # api 인증키 세팅
+  serviceKey: serviceKey...
