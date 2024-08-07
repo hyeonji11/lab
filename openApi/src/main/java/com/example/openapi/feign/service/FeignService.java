@@ -1,6 +1,6 @@
 package com.example.openapi.feign.service;
 
-import com.example.openapi.feign.client.FeignClient;
+import com.example.openapi.feign.client.OpenFeignClient;
 import com.example.openapi.feign.model.ResponseData;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class FeignService {
 
-    private final FeignClient feignClient;
+    private final OpenFeignClient feignClient;
 
     @Value("${openapi.serviceKey}")
     private String serviceKey;
