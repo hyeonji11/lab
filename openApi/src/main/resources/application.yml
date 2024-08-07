@@ -1,8 +1,11 @@
+spring:
+  config:
+    import: my-info.yml
+
 feign:
   svc1:
     name: svc1
     url: https://apis.data.go.kr
 
-spring:
-  config:
-    import: my-info.yml
+api:
+  url: https://apis.data.go.kr
