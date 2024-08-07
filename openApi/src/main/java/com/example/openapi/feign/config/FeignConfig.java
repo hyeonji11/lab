@@ -23,4 +23,6 @@ public class FeignConfig {
 //    public Encoder feignEncoder() {
 //        return new JacksonEncoder(customObjectMapper); //인코딩 과정에서 사용할 수 있는 Encoder Bean을 생성
 //    }
+
+    // TODO : error decoder 추가
 }
