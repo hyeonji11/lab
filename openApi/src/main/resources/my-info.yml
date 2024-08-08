@@ -1,3 +1,3 @@
 openapi:
   # api 인증키 세팅
-  serviceKey: serviceKey...
+  serviceKey: ENC(phNZb6cqPdAkY8+k89Nqos0hcH+IwFICT7GeEa0vxxvrVufOpClZGBfhjGNw0fNeO5c2v9zGMGiW2l2meRBTc7VQHxA6XwTQ9kPUzEHkkgtHTKTVzrto56TI/6uM0VDwVADT96EmE70=)
