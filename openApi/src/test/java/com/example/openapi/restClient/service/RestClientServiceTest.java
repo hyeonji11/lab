@@ -22,4 +22,13 @@ class RestClientServiceTest {
         assertNotNull(responseDto.getResponse().getBody().getItems().getItem());
     }
 
+    @Test
+    public void getAreaCodeTest2() {
+        ResponseData responseDto = restClientService.getAreaCode2();
+
+        assertNotNull(responseDto);
+        assertEquals(responseDto.getResponse().getHeader().getResultMsg(), "OK");
+        assertNotNull(responseDto.getResponse().getBody().getItems().getItem());
+    }
+
 }

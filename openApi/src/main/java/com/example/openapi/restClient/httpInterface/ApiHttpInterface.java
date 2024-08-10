@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.service.annotation.GetExchange;
 import org.springframework.web.service.annotation.HttpExchange;
 
+import java.util.Map;
+
 @Component
 @HttpExchange
 public interface ApiHttpInterface {
@@ -18,4 +20,7 @@ public interface ApiHttpInterface {
                              @RequestParam("pageNo") int page,
                              @RequestParam("numOfRows") int pageSize
     );
+
+    @GetExchange("/B551011/KorService1/areaCode1")
+    ResponseData getAreaCodeObject(@RequestParam Map<String, Object> requestParam);
 }
