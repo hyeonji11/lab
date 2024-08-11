@@ -1,11 +1,11 @@
-package com.example.openapi.feign.model;
+package com.example.openapi.feign.dto;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class PetResponseModel {
+public class PetResponse {
     String contentid;
     String petTursmInfo;
     String relaAcdntRiskMtr;

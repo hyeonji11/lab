@@ -1,4 +1,4 @@
-package com.example.openapi.feign.model;
+package com.example.openapi.feign.dto;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -38,6 +38,6 @@ public class ResponseData {
     @Getter
     @Setter
     public static class Items {
-        List<PetResponseModel> item;
+        List<PetResponse> item;
     }
 }

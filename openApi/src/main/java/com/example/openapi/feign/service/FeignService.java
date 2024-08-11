@@ -1,7 +1,7 @@
 package com.example.openapi.feign.service;
 
 import com.example.openapi.feign.client.OpenFeignClient;
-import com.example.openapi.feign.model.ResponseData;
+import com.example.openapi.feign.dto.ResponseData;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

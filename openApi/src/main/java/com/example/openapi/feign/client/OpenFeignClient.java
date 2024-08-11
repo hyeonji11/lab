@@ -1,6 +1,6 @@
 package com.example.openapi.feign.client;
 
-import com.example.openapi.feign.model.ResponseData;
+import com.example.openapi.feign.dto.ResponseData;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

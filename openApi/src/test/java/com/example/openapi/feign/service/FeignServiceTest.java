@@ -1,6 +1,6 @@
 package com.example.openapi.feign.service;
 
-import com.example.openapi.feign.model.ResponseData;
+import com.example.openapi.feign.dto.ResponseData;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

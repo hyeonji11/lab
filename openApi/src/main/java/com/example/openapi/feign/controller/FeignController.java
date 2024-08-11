@@ -1,6 +1,6 @@
 package com.example.openapi.feign.controller;
 
-import com.example.openapi.feign.model.ResponseData;
+import com.example.openapi.feign.dto.ResponseData;
 import com.example.openapi.feign.service.FeignService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
