@@ -9,35 +9,35 @@ import java.util.List;
 @Setter
 public class ResponseData {
 
-    Response response;
+    private Response response;
 
     @Getter
     @Setter
     public static class Response {
-        Header header;
-        Body body;
+        private Header header;
+        private Body body;
     }
 
 
     @Getter
     @Setter
     public static class Header {
-        String resultMsg;
-        String resultCode;
+        private String resultMsg;
+        private String resultCode;
     }
 
     @Getter
     @Setter
     public static class Body {
-        String totalCount;
-        String numOfRows;
-        String pageNo;
-        Items items;
+        private String totalCount;
+        private String numOfRows;
+        private String pageNo;
+        private Items items;
     }
 
     @Getter
     @Setter
     public static class Items {
-        List<PetResponse> item;
+        private List<PetResponse> item;
     }
 }

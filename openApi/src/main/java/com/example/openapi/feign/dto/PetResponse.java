@@ -6,15 +6,15 @@ import lombok.Setter;
 @Getter
 @Setter
 public class PetResponse {
-    String contentid;
-    String petTursmInfo;
-    String relaAcdntRiskMtr;
-    String acmpyTypeCd;
-    String relaPosesFclty;
-    String relaFrnshPrdlst;
-    String etcAcmpyInfo;
-    String relaPurcPrdlst;
-    String acmpyPsblCpam;
-    String relaRntlPrdlst;
-    String acmpyNeedMtr;
+    private String contentid;
+    private String petTursmInfo;
+    private String relaAcdntRiskMtr;
+    private String acmpyTypeCd;
+    private String relaPosesFclty;
+    private String relaFrnshPrdlst;
+    private String etcAcmpyInfo;
+    private String relaPurcPrdlst;
+    private String acmpyPsblCpam;
+    private String relaRntlPrdlst;
+    private String acmpyNeedMtr;
 }
