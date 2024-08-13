@@ -1,10 +1,8 @@
 package com.example.openapi.feign.dto;
 
 import lombok.Getter;
-import lombok.Setter;
 
 @Getter
-@Setter
 public class PetResponse {
     private String contentid;
     private String petTursmInfo;
