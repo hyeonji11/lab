@@ -29,7 +29,6 @@ public class OpenAIServiceImpl implements OpenAIService{
     public Answer getCapital(CapitalRequest capitalRequest) {
         String templateContent;
         try {
-            // Resource에서 템플릿 내용을 문자열로 변환
             templateContent = StreamUtils.copyToString(getCapitalPrompt.getInputStream(), StandardCharsets.UTF_8);
         } catch (IOException e) {
             throw new RuntimeException("Error loading template: " + getCapitalPrompt.getFilename(), e);
@@ -37,7 +36,6 @@ public class OpenAIServiceImpl implements OpenAIService{
 
         PromptTemplate promptTemplate = new PromptTemplate(templateContent);
         Prompt prompt = promptTemplate.create(Map.of("stateOrCountry", capitalRequest.stateOrCountry()));
-//        ChatResponse response = chatClient.prompt().user(prompt).call().content();
         ChatResponse response = chatModel.call(prompt);
 
         return new Answer(response.getResult().getOutput().getContent());
