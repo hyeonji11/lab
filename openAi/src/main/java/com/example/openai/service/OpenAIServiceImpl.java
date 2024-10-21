@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StreamUtils;
+import reactor.core.publisher.Flux;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -39,5 +40,12 @@ public class OpenAIServiceImpl implements OpenAIService{
         ChatResponse response = chatModel.call(prompt);
 
         return new Answer(response.getResult().getOutput().getContent());
+    }
+
+    // Stream 형식
+    @Override
+    public Flux<String> getStream(String message) {
+        Flux<String> response = chatModel.stream(message);
+        return response;
     }
 }

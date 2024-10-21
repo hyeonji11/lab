@@ -4,9 +4,9 @@ import com.example.openai.model.Answer;
 import com.example.openai.model.CapitalRequest;
 import com.example.openai.service.OpenAIService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ai.chat.model.ChatResponse;
+import org.springframework.web.bind.annotation.*;
+import reactor.core.publisher.Flux;
 
 @RestController
 @RequiredArgsConstructor
@@ -17,5 +17,10 @@ public class QuestionController {
     @PostMapping("/capital")
     public Answer getCapital(@RequestBody CapitalRequest capitalRequest) {
         return this.openAIService.getCapital(capitalRequest);
+    }
+
+    @GetMapping("/ai/stream")
+    public Flux<String> getCapital(@RequestParam String message) {
+        return this.openAIService.getStream(message);
     }
 }
