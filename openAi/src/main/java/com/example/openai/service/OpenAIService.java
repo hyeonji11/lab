@@ -7,4 +7,6 @@ import reactor.core.publisher.Flux;
 public interface OpenAIService {
     Answer getCapital(CapitalRequest capitalRequest);
     Flux<String> getStream(String message);
+
+    Answer getMenu();
 }
