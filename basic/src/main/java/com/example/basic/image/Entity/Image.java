@@ -19,5 +19,12 @@ public class Image extends BaseTimeEntity {
     private String imageUrl;
     private String originImageName;
     private String imageName;
-    private String representImageYn;
+
+    public Image(String imageUrl, String originImageName, String imageName) {
+        this.imageUrl = imageUrl;
+        this.originImageName = originImageName;
+        this.imageName = imageName;
+    }
+
+
 }
