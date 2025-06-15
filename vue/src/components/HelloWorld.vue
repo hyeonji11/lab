@@ -1,4 +1,9 @@
 <script setup>
+import QuantitySelector from './QuantitySelector.vue';
+import {ref} from 'vue';
+
+const count = ref(1);
+
 defineProps({
   msg: {
     type: String,
@@ -10,6 +15,7 @@ defineProps({
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
+    <QuantitySelector v-model="count" :min="1" :max="10" />
     <h3>
       You’ve successfully created a project with
       <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +
