@@ -14,6 +14,7 @@
 
 ## basic
 - swagger 연동
+- API 요청/응답 interceptor 구현
 
 ## vue
 - API 연결 테스트 위한 Vue 프로젝트
